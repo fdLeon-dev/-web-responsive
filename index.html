@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller 15 - Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">LOREM IPSUM</a>
+
+        <!-- menu hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- opciones del menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- buscador para mobiles -->
+          <form class="d-flex my-2 my-lg-0 d-block d-lg-none" role="search">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <ul
+            class="navbar-nav ms-lg-3 mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-light active px-lg-5" aria-current="page" href="#"
+                >Dolor</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-lg-5" href="#">Sit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-lg-5" href="#">Amet</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link text-light px-lg-5" href="#" id="options">Opciones</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- buscador visible en desktop -->
+        <form class="d-flex my-2 my-lg-0 d-none d-lg-block" role="search">
+          <input
+            type="search"
+            class="form-control me-2"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <!-- titulo visible en desktop -->
+      <h1 class="text-center d-none d-lg-block mt-5">Lorem ipsum...</h1>
+
+      <!-- carousel solo desktop -->
+      <div
+        class="carousel slide text-center fs-5 fw-medium d-none d-lg-block"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, minima?
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="carousel-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila principal -->
+      <div class="row">
+        <!-- Columna izquierda Opciones - visible en desktop y mobile -->
+        <aside class="col-lg-3 col-md-12 mb-3 d-block options">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action p-3 rounded"><a class="text-black" href="#" 
+              >Opción 1</a
+            ></li>
+            <li class="list-group-item list-group-item-action p-3 rounded"><a class="text-black" href="#" 
+              >Opción 2</a
+            ></li>
+            <li class="list-group-item list-group-item-action p-3 rounded"><a class="text-black" href="#" 
+              >Opción 3</a
+            ></li>
+            <li class="list-group-item list-group-item-action p-3 rounded"><a class="text-black" href="#" 
+              >Opción 4</a
+            ></li>
+          </ul>
+        </aside>
+
+        <!-- Columna derecha -->
+        <section class="col-lg-9 col-md-12">
+          <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum mollis, tortor ac congue commodo...
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Phasellus eleifend semper tempor. Quisque mi lorem, laoreet eu
+                  urna sit amet, tempor volutpat est.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Fusce vitae enim et tellus lacinia condimentum eu at massa.
+                  Nullam laoreet, elit quis hendrerit maximus...
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Mauris mattis porttitor erat, in pharetra risus fringilla
+                  lobortis. Vestibulum et ante commodo.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  In mi velit, fringilla sed velit vel, ornare varius dui. Nunc
+                  viverra diam sit amet mollis posuere.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Proin suscipit orci mi, ut hendrerit mi molestie nec. Donec
+                  efficitur risus erat, eu auctor massa molestie vitae.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusantium amet architecto quasi eum similique molestias officia minima aliquam nobis.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 bg-light mb-3">
+              <div class="px-3 ">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam autem itaque accusantium aliquam distinctio optio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+    integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- script para mostrar opciones en mobile -->
+  <script defer>
+    const optionsBtn = document.getElementById("options");
+    const list = document.querySelector("aside.options");
+
+    // Ocultar opciones por defecto en mobile
+    if (window.innerWidth < 992) {
+      list.classList.add("d-none");
+    }
+
+    optionsBtn.addEventListener("click", () => {
+      list.classList.toggle("d-none");
+    });
+  </script>
+</html>
